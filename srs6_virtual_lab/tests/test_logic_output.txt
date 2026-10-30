@@ -1,0 +1,15 @@
+PASS 10 cm -> RED
+PASS 19.99 cm -> RED
+PASS 20 cm -> YELLOW
+PASS 35 cm -> YELLOW
+PASS 50 cm -> YELLOW
+PASS 50.01 cm -> GREEN
+PASS 70 cm -> GREEN
+PASS invalid -> NONE (LED off)
+PASS invalid 999 is not free path
+PASS pulseIn=0 -> invalid, not 0 cm
+PASS 2041 us -> ~35 cm
+PASS median rejects 300 cm spike
+PASS 3 of 5 valid -> valid median
+PASS 2 of 5 valid -> invalid (safe)
+OK: 0 failed
